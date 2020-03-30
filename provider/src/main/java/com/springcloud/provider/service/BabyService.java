@@ -1,9 +1,7 @@
 package com.springcloud.provider.service;
 
+import com.springcloud.commonutil.entity.Baby;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.springcloud.commonutil.entity.Book;
-
-import java.util.List;
 
 /**
  * <p>
@@ -13,7 +11,7 @@ import java.util.List;
  * @author testjava
  * @since 2020-03-24
  */
-public interface BookService extends IService<Book> {
+public interface BabyService extends IService<Baby> {
 
-    List<Book> getAllBookInfo();
+    String insertBay();
 }

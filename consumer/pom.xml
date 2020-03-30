@@ -6,6 +6,7 @@
     <groupId>com.springcloud</groupId>
     <artifactId>parent</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../parent/pom.xml</relativePath>
 </parent>
 <groupId>com.springcloud</groupId>
 <artifactId>consumer</artifactId>
@@ -38,6 +39,11 @@
         <artifactId>mysql-connector-java</artifactId>
 
     </dependency>
+    <dependency>
+        <groupId>com.springcloud</groupId>
+        <artifactId>common-util</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
 
     <!-- velocity 模板引擎, Mybatis Plus 代码生成器需要 -->
     <!--<dependency>-->
@@ -46,14 +52,14 @@
     <!--</dependency>-->
 
     <!--swagger-->
-    <!--<dependency>-->
-    <!--<groupId>io.springfox</groupId>-->
-    <!--<artifactId>springfox-swagger2</artifactId>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>io.springfox</groupId>-->
-    <!--<artifactId>springfox-swagger-ui</artifactId>-->
-    <!--</dependency>-->
+    <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    </dependency>
+    <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    </dependency>
 
     <!--lombok用来简化实体类：需要安装lombok插件-->
     <!--<dependency>-->
@@ -66,6 +72,13 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
+
+    <!--  引入hystrix进行服务熔断 -->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+    </dependency>
+
 </dependencies>
 
 <build>

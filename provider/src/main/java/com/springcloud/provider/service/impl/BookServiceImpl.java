@@ -1,6 +1,6 @@
 package com.springcloud.provider.service.impl;
 
-import com.springcloud.provider.entity.Book;
+import com.springcloud.commonutil.entity.Book;
 import com.springcloud.provider.mapper.BookMapper;
 import com.springcloud.provider.service.BookService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

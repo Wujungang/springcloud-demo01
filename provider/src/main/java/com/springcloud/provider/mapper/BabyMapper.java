@@ -1,7 +1,7 @@
 package com.springcloud.provider.mapper;
 
+import com.springcloud.commonutil.entity.Baby;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.springcloud.commonutil.entity.Book;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.springcloud.commonutil.entity.Book;
  * @author testjava
  * @since 2020-03-24
  */
-public interface BookMapper extends BaseMapper<Book> {
+public interface BabyMapper extends BaseMapper<Baby> {
 
 }
